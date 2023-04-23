@@ -1,0 +1,23 @@
+* {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh
+}
+
+img {
+    animation: Rotate 10s linear none infinite;
+    border-radius: 50%
+}
+
+@keyframes Rotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}
