@@ -2,7 +2,7 @@ import { Application, Request, Response } from 'express'
 import { readdirSync } from 'fs'
 
 export default async function (expressApp: Application) {
-    const Routes = readdirSync(__dirname + '/routes')
+    const Routes = readdirSync(`${__dirname}/routes`)
     console.log(`Successfully loaded ${Routes.length} route(s).`)
     
     for (const route of Routes) {
